@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+
+    <title>Wine Quality Prediction</title>
+</head>
+    <body>
+        <div class="boddy ">
+            <div class="backimg"></div>
+                
+                    <div class="inputblock">
+                        <div class="border1">
+                            <div class="container">
+                    <div class="heading">
+                        <h1>Wine Quality Prediction</h1>
+                    </div>
+                
+                     
+                                <form action="/predict" method="POST">
+                                    <div class="enter ">
+                                        <input type="number" step="any" name="fixed_acidity" placeholder="Fixed Acidity" required>
+                                    </div>
+                                    <div class="enter">
+                                    <input type="number" step="any" name="volatile_acidity" placeholder="Volatile Acidity" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="citric_acid" placeholder="Citric Acid" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="residual_sugar" placeholder="Residual Sugar" required> 
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="chlorides" placeholder="Chlorides" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="free_sulfur_dioxide" placeholder="Free Sulfur Dioxide" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="total_sulfur_dioxide" placeholder="Total Sulfur Dioxide" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="density" placeholder="Density" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="ph" placeholder="pH" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="sulphates" placeholder="Sulphates" required>
+                                    </div>
+                                    <div class="enter">
+                                        <input type="number" step="any" name="alcohol" placeholder="Alcohol" required>
+                                    </div>
+                                    
+                            
+                            
+                            
+                                        <div class="but">
+                                            <button type="submit">Predict</button>
+                                        </div>
+                                        
+
+                                    </form>
+                                </div>
+                                <div class="result"> 
+                                    {% if error %}
+                                    <h3>{{ error }}</h3>
+                                    {% endif %}
+
+                                    {% if prediction %}
+                                    <h3>{{ prediction }}</h3>
+                                    {% endif %}
+                                </div> 
+                        </div>
+                   </div>
+            </div>
+            <footer>
+                &copy | 2026 | Jayant Kumar Sharma | All Rights Reserved
+            </footer>
+    </body>
+</html>

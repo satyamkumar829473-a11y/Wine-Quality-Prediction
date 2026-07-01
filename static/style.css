@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black  ;
+} 
+
+.buddy {
+    height: 100vh;
+    
+    
+}
+.backimg{
+    height: 105vh;
+    background-image: url(hide.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.container{
+    height: 450px;
+    width: 600px; 
+    border: 2px solid wheat; 
+    display: none;
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.589);  
+}
+
+.inputblock{
+    width: 596px;
+   
+}
+.enter{
+    margin: 3px 0px 3px 0px;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.heading{
+    height: 55px;
+    text-align: center;
+}
+.result{
+    height: 40px;
+    text-align: center;
+}
+.border1{
+    margin-left: 10px;
+    border: 2px solid transparent;
+    position: absolute;
+    inset: 0;
+    animation-name:spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+
+    
+}
+.but{
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 25px;
+    width: 60px;
+    
+}
+.border1{
+    background-image: url(download1.jpg);
+    border-top: 2px solid black;
+    border-top-right-radius: 50%;
+    border-left: 2px solid black;
+    border-bottom-left-radius: 50%;
+
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 50%;
+    border-right: 2px solid black;
+    border-top-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        display: block;
+        .backimg {
+        display:none;
+    }
+    }
+
+    
+    
+}
+@keyframes spin{
+ 0%{
+    transform: translateX(10px);
+ }
+ 50%{
+    transform: translateX(25px);
+ }
+ 100%{
+    transform: translateX(10px);
+ }
+ 0%{
+    transform: translateY(10px);
+ }
+ 50%{
+    transform: translateY(25px);
+ }
+ 100%{
+    transform: translateY(10px);
+ }
+}
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
