@@ -6,7 +6,7 @@ A Machine Learning-based web application that predicts the quality of wine based
 
 ## Internship Project Details
 
-- **Intern ID:** CITS1773
+- **Intern ID:** CITS1377
 - **Name:** Satyam Kumar
 - **Project Name:** Wine Quality Prediction
 - **Project Duration:** 6 Weeks
@@ -71,8 +71,7 @@ Wine-Quality-Prediction/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Wine-Quality-Prediction.git
-cd Wine-Quality-Prediction
+https://github.com/satyamkumar829473-a11y/Wine-Quality-Prediction
 ```
 
 ### Install Dependencies
